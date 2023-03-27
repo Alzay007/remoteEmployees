@@ -1,0 +1,9 @@
+@import "./utils/vars";
+@import "./utils/mixins";
+@import "./utils/reset";
+@import "./blocks/footer.scss";
+@import "./blocks/header.scss";
+
+:root {
+  font-family: "Libre Franklin", sans-serif;
+}
