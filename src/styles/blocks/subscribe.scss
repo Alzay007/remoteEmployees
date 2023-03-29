@@ -1,6 +1,8 @@
 .subscribe {
   position: relative;
-  background-image: linear-gradient(0deg, rgba(40, 39, 42, 0.7) 0%, rgba(40, 39, 42, 0.7) 100%), url('../images/icons/subscribe-bg.png');
+  background-image: linear-gradient(0deg, rgba(40, 39, 42, 0.7) 0%,
+  rgba(40, 39, 42, 0.7) 100%),
+    url("../images/icons/subscribe-bg.png");
   background-repeat: no-repeat;
   background-size: 40%;
   background-position: center 70%;
