@@ -2,22 +2,19 @@ body,
 h1,
 h2,
 h3,
+h4,
 p,
-input,
-textarea,
+ul,
 li {
   margin: 0;
+  font-size: inherit;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
 }
 
 a {
   text-decoration: none;
-}
-
-button {
-  border: none;
-}
-
-ul {
-  padding: 0;
-  list-style: none;
 }

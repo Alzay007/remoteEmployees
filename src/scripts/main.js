@@ -1,28 +1,53 @@
-// import Swiper, { Navigation } from 'swiper';
-// import 'swiper/swiper-bundle.min.css';
+const swiperOne = new Swiper('.swiper-header', {
+    direction: 'horizontal',
+    loop: true,
 
-// // eslint-disable-next-line no-unused-vars
-// const swiper = new Swiper('.swiper', {
-//   modules: [Navigation],
+    pagination: {
+        el: '.swiper-pagination',
+        type: 'fraction',
+    },
 
-//   navigation: {
-//     nextEl: '.swiper-arrow-next',
-//     prevEl: '.swiper-arrow-prev',
-//   },
-// });
+    navigation: {
+        nextEl: '.button-next',
+        prevEl: '.button-prev',
+    },
+});
 
-// const form = document.querySelector('.form');
+const swiperTwo = new Swiper('.swiper-featured', {
+    direction: 'horizontal',
+    slidesPerView: 3,
+    slidesPerColumn: 2,
+    spaceBetween: 50,
+    loop: true,
 
-// form.addEventListener('submit', function (event) {
-//   event.preventDefault();
+    autoplay: {
+        delay: 5000,
+    },
 
-//   form.reset();
-// });
+    pagination: {
+        el: '.swiper-pagination',
+        type: 'fraction',
+    },
+});
 
-// window.addEventListener('hashchange', () => {
-//   if (window.location.hash === '#menu') {
-//     document.body.classList.add('page__body--with-menu');
-//   } else {
-//     document.body.classList.remove('page__body--with-menu');
-//   }
-// });
+const swiperThree = new Swiper('.swiper-editors', {
+    slidesPerView: 1,
+    slidesPerColumnFill: 'column',
+
+    grid: {
+        rows: 2,
+        fill: "row",
+    },
+
+    spaceBetween: 50,
+
+    pagination: {
+        el: '.swiper-pagination',
+        type: 'fraction',
+    },
+
+    navigation: {
+        nextEl: '.button-next',
+        prevEl: '.button-prev',
+    },
+});

@@ -1,9 +1,12 @@
-@import "./utils/vars";
-@import "./utils/mixins";
-@import "./utils/reset";
-@import "./blocks/footer.scss";
-@import "./blocks/header.scss";
+@import "./utils.scss";
 
-:root {
-  font-family: "Libre Franklin", sans-serif;
-}
+@import "./blocks/header.scss";
+@import "./blocks/swiper.scss";
+@import "./blocks/featured.scss";
+@import "./blocks/above.scss";
+@import "./blocks/editors.scss";
+@import "./blocks/collection.scss";
+@import "./blocks/subscribe.scss";
+@import "./blocks/footer.scss";
+@import "./blocks/container.scss";
+@import "./blocks/button.scss";
